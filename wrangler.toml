@@ -1,0 +1,25 @@
+name = "tg-n8n-proxy-bot"
+main = "src/worker.ts"
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
+usage_model = "bundled"
+workers_dev = true
+
+# Replace the placeholders below after running:
+# wrangler kv namespace create CHAT_STATES
+# Then copy the id to the 'id' field.
+[[kv_namespaces]]
+binding = "CHAT_STATES"
+id = "YOUR_KV_NAMESPACE_ID" # Production namespace ID
+preview_id = "YOUR_KV_PREVIEW_NAMESPACE_ID" # Dev/preview namespace ID (run: wrangler kv namespace create CHAT_STATES --preview)
+
+[observability]
+enabled = true
+
+[vars]
+# Optional: TELEGRAM_SECRET_TOKEN can be set as a secret instead of var.
+# But recommended to use secrets for sensitive values.
+# These are documented in README; set via: wrangler secret put <NAME>
+# TELEGRAM_BOT_TOKEN = ""
+# TELEGRAM_SECRET_TOKEN = ""
+# N8N_WEBHOOK_URL = ""
