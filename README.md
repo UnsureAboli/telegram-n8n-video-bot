@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 ربات پردازش ویدیو تلگرام به N8N
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -223,3 +224,6 @@ wrangler tail
 ---
 
 **ساخته شده با ❤️ با استفاده از TypeScript، Cloudflare Workers و Telegram Bot API**
+=======
+# telegram-n8n-video-bot
+>>>>>>> 79008560b1c6de73a919f80a6b3b544b5e4a2f45
